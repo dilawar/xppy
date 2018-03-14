@@ -87,7 +87,7 @@ def createTmp(ode_file=None, set_file=None):
     if set_file != None:
         shutil.copy(set_file, tmp_set)
     if ode_file == None and set_file == None:
-        print 'Warning! No files where created, both ode and set arguments are None.'
+        print( 'Warning! No files where created, both ode and set arguments are None.' )
 
 def deleteTmp(del_ode=True, del_set=True):
     '''
