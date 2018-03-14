@@ -1,0 +1,148 @@
+\hypertarget{namespacexppy_1_1utils_1_1data}{}\section{xppy.\+utils.\+data Namespace Reference}
+\label{namespacexppy_1_1utils_1_1data}\index{xppy.\+utils.\+data@{xppy.\+utils.\+data}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacexppy_1_1utils_1_1data_a5b590b344df5f227497a0be2c46d7182}{get\+Orbit}} (data, start=None, eps=1e-\/4, col=1)
+\begin{DoxyCompactList}\small\item\em Data processing/analysing functions. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespacexppy_1_1utils_1_1data_a380d774ab7acaada36d1e3885dff4def}{arc\+Length}} (data)
+\item 
+def \mbox{\hyperlink{namespacexppy_1_1utils_1_1data_a7306f92ed3b5678b74bd4e0fa75ddb6e}{resample1d}} (data, ns)
+\item 
+def \mbox{\hyperlink{namespacexppy_1_1utils_1_1data_ab759be682464d135b9aff86a1ed5b5bf}{find\+Spikes}} (data, cols=\mbox{[}0, threshold=20, sample\+Thr=3)
+\item 
+def \mbox{\hyperlink{namespacexppy_1_1utils_1_1data_a585f17a25e7dcefc06dd2476644fed6a}{find\+A\+DP}} (data, cols=\mbox{[}0, threshold=20, sample\+Thr=3)
+\item 
+def \mbox{\hyperlink{namespacexppy_1_1utils_1_1data_a106565881aecee459e3af1b3b2778731}{I\+SI}} (data, cols=\mbox{[}0, threshold=20, sample\+Thr=3)
+\item 
+def \mbox{\hyperlink{namespacexppy_1_1utils_1_1data_aeab79029ca4d8b88427aef50e2b7ead1}{get\+D\+V\+DT}} (data, cols=\mbox{[}0)
+\item 
+def \mbox{\hyperlink{namespacexppy_1_1utils_1_1data_a813c03dadd59868d94ee0ad6039848a3}{get\+Threshold}} (data, cols=\mbox{[}0)
+\item 
+def \mbox{\hyperlink{namespacexppy_1_1utils_1_1data_a3bace94f47f9cadb95abf59e90a272dd}{get\+Tau}} (data, cols=\mbox{[}0)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}This file is part of XPPy.
+
+Copyright (c) 2009-2011, Jakub Nowacki
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+    * Redistributions of source code must retain the above copyright
+      notice, this list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above copyright
+      notice, this list of conditions and the following disclaimer in the
+      documentation and/or other materials provided with the distribution.
+    * Neither the name of the XPPy Developers nor the
+      names of its contributors may be used to endorse or promote products
+      derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL <COPYRIGHT HOLDER> BE LIABLE FOR ANY
+DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+\end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacexppy_1_1utils_1_1data_a380d774ab7acaada36d1e3885dff4def}\label{namespacexppy_1_1utils_1_1data_a380d774ab7acaada36d1e3885dff4def}} 
+\index{xppy\+::utils\+::data@{xppy\+::utils\+::data}!arc\+Length@{arc\+Length}}
+\index{arc\+Length@{arc\+Length}!xppy\+::utils\+::data@{xppy\+::utils\+::data}}
+\subsubsection{\texorpdfstring{arc\+Length()}{arcLength()}}
+{\footnotesize\ttfamily def xppy.\+utils.\+data.\+arc\+Length (\begin{DoxyParamCaption}\item[{}]{data }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Calculate the arclenght of the provided data.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacexppy_1_1utils_1_1data_a585f17a25e7dcefc06dd2476644fed6a}\label{namespacexppy_1_1utils_1_1data_a585f17a25e7dcefc06dd2476644fed6a}} 
+\index{xppy\+::utils\+::data@{xppy\+::utils\+::data}!find\+A\+DP@{find\+A\+DP}}
+\index{find\+A\+DP@{find\+A\+DP}!xppy\+::utils\+::data@{xppy\+::utils\+::data}}
+\subsubsection{\texorpdfstring{find\+A\+D\+P()}{findADP()}}
+{\footnotesize\ttfamily def xppy.\+utils.\+data.\+find\+A\+DP (\begin{DoxyParamCaption}\item[{}]{data,  }\item[{}]{cols = {\ttfamily \mbox{[}0},  }\item[{}]{threshold = {\ttfamily 20},  }\item[{}]{sample\+Thr = {\ttfamily 3} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function finds ADP in data in given columns. Threshold and sample threshold,
+are parameters for findSpikes.
+Threshold value according to (Naundorf et al. 2006).
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacexppy_1_1utils_1_1data_ab759be682464d135b9aff86a1ed5b5bf}\label{namespacexppy_1_1utils_1_1data_ab759be682464d135b9aff86a1ed5b5bf}} 
+\index{xppy\+::utils\+::data@{xppy\+::utils\+::data}!find\+Spikes@{find\+Spikes}}
+\index{find\+Spikes@{find\+Spikes}!xppy\+::utils\+::data@{xppy\+::utils\+::data}}
+\subsubsection{\texorpdfstring{find\+Spikes()}{findSpikes()}}
+{\footnotesize\ttfamily def xppy.\+utils.\+data.\+find\+Spikes (\begin{DoxyParamCaption}\item[{}]{data,  }\item[{}]{cols = {\ttfamily \mbox{[}0},  }\item[{}]{threshold = {\ttfamily 20},  }\item[{}]{sample\+Thr = {\ttfamily 3} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function finds spikes in the given two data columns data. 
+Threshold is a slope of the tangent line. SampleThr is 
+minimal number of samples where slope is greater then threshold.
+Threshold value according to (Naundorf et al. 2006).
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacexppy_1_1utils_1_1data_aeab79029ca4d8b88427aef50e2b7ead1}\label{namespacexppy_1_1utils_1_1data_aeab79029ca4d8b88427aef50e2b7ead1}} 
+\index{xppy\+::utils\+::data@{xppy\+::utils\+::data}!get\+D\+V\+DT@{get\+D\+V\+DT}}
+\index{get\+D\+V\+DT@{get\+D\+V\+DT}!xppy\+::utils\+::data@{xppy\+::utils\+::data}}
+\subsubsection{\texorpdfstring{get\+D\+V\+D\+T()}{getDVDT()}}
+{\footnotesize\ttfamily def xppy.\+utils.\+data.\+get\+D\+V\+DT (\begin{DoxyParamCaption}\item[{}]{data,  }\item[{}]{cols = {\ttfamily \mbox{[}0} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function calculated dV/dt over given data.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacexppy_1_1utils_1_1data_a5b590b344df5f227497a0be2c46d7182}\label{namespacexppy_1_1utils_1_1data_a5b590b344df5f227497a0be2c46d7182}} 
+\index{xppy\+::utils\+::data@{xppy\+::utils\+::data}!get\+Orbit@{get\+Orbit}}
+\index{get\+Orbit@{get\+Orbit}!xppy\+::utils\+::data@{xppy\+::utils\+::data}}
+\subsubsection{\texorpdfstring{get\+Orbit()}{getOrbit()}}
+{\footnotesize\ttfamily def xppy.\+utils.\+data.\+get\+Orbit (\begin{DoxyParamCaption}\item[{}]{data,  }\item[{}]{start = {\ttfamily None},  }\item[{}]{eps = {\ttfamily 1e-\/4},  }\item[{}]{col = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Data processing/analysing functions. 
+
+\begin{DoxyVerb}Function extracts single orbit from given data and returns it.
+The orbit is ectracted from 'start' with accuracy of the end 
+point less than eps. The compared data is taken from 
+the column col.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacexppy_1_1utils_1_1data_a3bace94f47f9cadb95abf59e90a272dd}\label{namespacexppy_1_1utils_1_1data_a3bace94f47f9cadb95abf59e90a272dd}} 
+\index{xppy\+::utils\+::data@{xppy\+::utils\+::data}!get\+Tau@{get\+Tau}}
+\index{get\+Tau@{get\+Tau}!xppy\+::utils\+::data@{xppy\+::utils\+::data}}
+\subsubsection{\texorpdfstring{get\+Tau()}{getTau()}}
+{\footnotesize\ttfamily def xppy.\+utils.\+data.\+get\+Tau (\begin{DoxyParamCaption}\item[{}]{data,  }\item[{}]{cols = {\ttfamily \mbox{[}0} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function gets time constant from hyperpolarizing current injection data.
+Time constant is defined as a crossing of 63% of the maximal amplitude
+of the trajectory. Note that t0 is the beginning of the current injection,
+function does not detect the beginning of current injection by itself.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacexppy_1_1utils_1_1data_a813c03dadd59868d94ee0ad6039848a3}\label{namespacexppy_1_1utils_1_1data_a813c03dadd59868d94ee0ad6039848a3}} 
+\index{xppy\+::utils\+::data@{xppy\+::utils\+::data}!get\+Threshold@{get\+Threshold}}
+\index{get\+Threshold@{get\+Threshold}!xppy\+::utils\+::data@{xppy\+::utils\+::data}}
+\subsubsection{\texorpdfstring{get\+Threshold()}{getThreshold()}}
+{\footnotesize\ttfamily def xppy.\+utils.\+data.\+get\+Threshold (\begin{DoxyParamCaption}\item[{}]{data,  }\item[{}]{cols = {\ttfamily \mbox{[}0} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function returns a threshold time and value for the first spike in the spike train.
+Threshold is defined as dV/dt crossing of 20 V/s (Naundorf et al. 2006).
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacexppy_1_1utils_1_1data_a106565881aecee459e3af1b3b2778731}\label{namespacexppy_1_1utils_1_1data_a106565881aecee459e3af1b3b2778731}} 
+\index{xppy\+::utils\+::data@{xppy\+::utils\+::data}!I\+SI@{I\+SI}}
+\index{I\+SI@{I\+SI}!xppy\+::utils\+::data@{xppy\+::utils\+::data}}
+\subsubsection{\texorpdfstring{I\+S\+I()}{ISI()}}
+{\footnotesize\ttfamily def xppy.\+utils.\+data.\+I\+SI (\begin{DoxyParamCaption}\item[{}]{data,  }\item[{}]{cols = {\ttfamily \mbox{[}0},  }\item[{}]{threshold = {\ttfamily 20},  }\item[{}]{sample\+Thr = {\ttfamily 3} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function calculates ISI from given data and return in the form of an array
+of ISI for the given pair. The ISI is calculated for the peak of the spikes.
+Threshold value according to (Naundorf et al. 2006).
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacexppy_1_1utils_1_1data_a7306f92ed3b5678b74bd4e0fa75ddb6e}\label{namespacexppy_1_1utils_1_1data_a7306f92ed3b5678b74bd4e0fa75ddb6e}} 
+\index{xppy\+::utils\+::data@{xppy\+::utils\+::data}!resample1d@{resample1d}}
+\index{resample1d@{resample1d}!xppy\+::utils\+::data@{xppy\+::utils\+::data}}
+\subsubsection{\texorpdfstring{resample1d()}{resample1d()}}
+{\footnotesize\ttfamily def xppy.\+utils.\+data.\+resample1d (\begin{DoxyParamCaption}\item[{}]{data,  }\item[{}]{ns }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function resamples the given data (1d line [x,y] data) using even 
+arc lenght (linear interpolation). New (resampled) data is returned.  
+\end{DoxyVerb}
+ 

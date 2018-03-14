@@ -1,0 +1,143 @@
+\hypertarget{namespacexppy_1_1parser_1_1parse}{}\section{xppy.\+parser.\+parse Namespace Reference}
+\label{namespacexppy_1_1parser_1_1parse}\index{xppy.\+parser.\+parse@{xppy.\+parser.\+parse}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacexppy_1_1parser_1_1parse_aac794ef9d9e9168bb0286bdda25e5600}{change\+\_\+ode}} (ode\+\_\+file=tmp\+\_\+ode, new\+\_\+pars=\mbox{[}$\,$\mbox{]})
+\item 
+def \mbox{\hyperlink{namespacexppy_1_1parser_1_1parse_a655d9a7521dcd4ad6911e08b58f21095}{change\+Ode}} (new\+\_\+pars, ode\+\_\+file=tmp\+\_\+ode)
+\item 
+def \mbox{\hyperlink{namespacexppy_1_1parser_1_1parse_af0671dc23954132227d4cbf16e5c6c59}{read\+Ode\+Pars}} (ode\+\_\+file=tmp\+\_\+ode, read\+\_\+par=True, read\+\_\+init=True, read\+\_\+opt=True)
+\item 
+def \mbox{\hyperlink{namespacexppy_1_1parser_1_1parse_a1c00e53643ddf8a99e5bb8acec822b39}{read\+Ode\+Vars}} (ode\+\_\+file=tmp\+\_\+ode)
+\item 
+def \mbox{\hyperlink{namespacexppy_1_1parser_1_1parse_ae61c7e82ae565801f9facea020627023}{change\+\_\+set}} (set\+\_\+file, new\+\_\+pars)
+\item 
+def \mbox{\hyperlink{namespacexppy_1_1parser_1_1parse_af04c5b3924cc737b63d6266edc3642aa}{change\+Set}} (new\+\_\+pars, set\+\_\+file=tmp\+\_\+set)
+\item 
+def \mbox{\hyperlink{namespacexppy_1_1parser_1_1parse_a7852601fc25e28c32b4fe9747e29a629}{read\+Set\+Pars}} (set\+\_\+file=tmp\+\_\+set, read\+\_\+par=True, read\+\_\+init=True)
+\item 
+def \mbox{\hyperlink{namespacexppy_1_1parser_1_1parse_a14842f4006ba1a6ccd66af9b43857426}{compare\+Pars}} (pars1, pars2)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacexppy_1_1parser_1_1parse_a2228ff549cca4926a11b1ca81e9cac96}\label{namespacexppy_1_1parser_1_1parse_a2228ff549cca4926a11b1ca81e9cac96}} 
+string {\bfseries tmp\+\_\+name} = \textquotesingle{}\+\_\+\+\_\+tmp\+\_\+\+\_\+\textquotesingle{}
+\item 
+\mbox{\Hypertarget{namespacexppy_1_1parser_1_1parse_a95c18175621964cb324e54d54a1d6438}\label{namespacexppy_1_1parser_1_1parse_a95c18175621964cb324e54d54a1d6438}} 
+string {\bfseries tmp\+\_\+ode} = tmp\+\_\+name+\textquotesingle{}.ode\textquotesingle{}
+\item 
+\mbox{\Hypertarget{namespacexppy_1_1parser_1_1parse_a34ee3293b6c4cb4ba20441bd12530cee}\label{namespacexppy_1_1parser_1_1parse_a34ee3293b6c4cb4ba20441bd12530cee}} 
+string {\bfseries tmp\+\_\+set} = tmp\+\_\+name+\textquotesingle{}.set\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}This file is part of XPPy.
+
+Copyright (c) 2009-2011, Jakub Nowacki
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+    * Redistributions of source code must retain the above copyright
+      notice, this list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above copyright
+      notice, this list of conditions and the following disclaimer in the
+      documentation and/or other materials provided with the distribution.
+    * Neither the name of the XPPy Developers nor the
+      names of its contributors may be used to endorse or promote products
+      derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE FOR ANY
+DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+\end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacexppy_1_1parser_1_1parse_aac794ef9d9e9168bb0286bdda25e5600}\label{namespacexppy_1_1parser_1_1parse_aac794ef9d9e9168bb0286bdda25e5600}} 
+\index{xppy\+::parser\+::parse@{xppy\+::parser\+::parse}!change\+\_\+ode@{change\+\_\+ode}}
+\index{change\+\_\+ode@{change\+\_\+ode}!xppy\+::parser\+::parse@{xppy\+::parser\+::parse}}
+\subsubsection{\texorpdfstring{change\+\_\+ode()}{change\_ode()}}
+{\footnotesize\ttfamily def xppy.\+parser.\+parse.\+change\+\_\+ode (\begin{DoxyParamCaption}\item[{}]{ode\+\_\+file = {\ttfamily tmp\+\_\+ode},  }\item[{}]{new\+\_\+pars = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function changes the parameters and initial conditions specified in
+new_pars in given ode_file. 
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacexppy_1_1parser_1_1parse_ae61c7e82ae565801f9facea020627023}\label{namespacexppy_1_1parser_1_1parse_ae61c7e82ae565801f9facea020627023}} 
+\index{xppy\+::parser\+::parse@{xppy\+::parser\+::parse}!change\+\_\+set@{change\+\_\+set}}
+\index{change\+\_\+set@{change\+\_\+set}!xppy\+::parser\+::parse@{xppy\+::parser\+::parse}}
+\subsubsection{\texorpdfstring{change\+\_\+set()}{change\_set()}}
+{\footnotesize\ttfamily def xppy.\+parser.\+parse.\+change\+\_\+set (\begin{DoxyParamCaption}\item[{}]{set\+\_\+file,  }\item[{}]{new\+\_\+pars }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function changes the parameters and initial conditions specified in
+new_pars in given ode_file. 
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacexppy_1_1parser_1_1parse_a655d9a7521dcd4ad6911e08b58f21095}\label{namespacexppy_1_1parser_1_1parse_a655d9a7521dcd4ad6911e08b58f21095}} 
+\index{xppy\+::parser\+::parse@{xppy\+::parser\+::parse}!change\+Ode@{change\+Ode}}
+\index{change\+Ode@{change\+Ode}!xppy\+::parser\+::parse@{xppy\+::parser\+::parse}}
+\subsubsection{\texorpdfstring{change\+Ode()}{changeOde()}}
+{\footnotesize\ttfamily def xppy.\+parser.\+parse.\+change\+Ode (\begin{DoxyParamCaption}\item[{}]{new\+\_\+pars,  }\item[{}]{ode\+\_\+file = {\ttfamily tmp\+\_\+ode} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function changes the parameters, initial conditions and options specified in
+new_pars in given ode_file. 
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacexppy_1_1parser_1_1parse_af04c5b3924cc737b63d6266edc3642aa}\label{namespacexppy_1_1parser_1_1parse_af04c5b3924cc737b63d6266edc3642aa}} 
+\index{xppy\+::parser\+::parse@{xppy\+::parser\+::parse}!change\+Set@{change\+Set}}
+\index{change\+Set@{change\+Set}!xppy\+::parser\+::parse@{xppy\+::parser\+::parse}}
+\subsubsection{\texorpdfstring{change\+Set()}{changeSet()}}
+{\footnotesize\ttfamily def xppy.\+parser.\+parse.\+change\+Set (\begin{DoxyParamCaption}\item[{}]{new\+\_\+pars,  }\item[{}]{set\+\_\+file = {\ttfamily tmp\+\_\+set} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function changes the parameters and initial conditions specified in
+new_pars in given ode_file. 
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacexppy_1_1parser_1_1parse_a14842f4006ba1a6ccd66af9b43857426}\label{namespacexppy_1_1parser_1_1parse_a14842f4006ba1a6ccd66af9b43857426}} 
+\index{xppy\+::parser\+::parse@{xppy\+::parser\+::parse}!compare\+Pars@{compare\+Pars}}
+\index{compare\+Pars@{compare\+Pars}!xppy\+::parser\+::parse@{xppy\+::parser\+::parse}}
+\subsubsection{\texorpdfstring{compare\+Pars()}{comparePars()}}
+{\footnotesize\ttfamily def xppy.\+parser.\+parse.\+compare\+Pars (\begin{DoxyParamCaption}\item[{}]{pars1,  }\item[{}]{pars2 }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function compares two lists of parameters and returns the difference
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacexppy_1_1parser_1_1parse_af0671dc23954132227d4cbf16e5c6c59}\label{namespacexppy_1_1parser_1_1parse_af0671dc23954132227d4cbf16e5c6c59}} 
+\index{xppy\+::parser\+::parse@{xppy\+::parser\+::parse}!read\+Ode\+Pars@{read\+Ode\+Pars}}
+\index{read\+Ode\+Pars@{read\+Ode\+Pars}!xppy\+::parser\+::parse@{xppy\+::parser\+::parse}}
+\subsubsection{\texorpdfstring{read\+Ode\+Pars()}{readOdePars()}}
+{\footnotesize\ttfamily def xppy.\+parser.\+parse.\+read\+Ode\+Pars (\begin{DoxyParamCaption}\item[{}]{ode\+\_\+file = {\ttfamily tmp\+\_\+ode},  }\item[{}]{read\+\_\+par = {\ttfamily True},  }\item[{}]{read\+\_\+init = {\ttfamily True},  }\item[{}]{read\+\_\+opt = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function reads the parameters and initial conditions  and options 
+from ode_file and returns parameters list. By default all the values 
+are read; the read of a specific type can be suppressed by changing
+the appropriate flag to False.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacexppy_1_1parser_1_1parse_a1c00e53643ddf8a99e5bb8acec822b39}\label{namespacexppy_1_1parser_1_1parse_a1c00e53643ddf8a99e5bb8acec822b39}} 
+\index{xppy\+::parser\+::parse@{xppy\+::parser\+::parse}!read\+Ode\+Vars@{read\+Ode\+Vars}}
+\index{read\+Ode\+Vars@{read\+Ode\+Vars}!xppy\+::parser\+::parse@{xppy\+::parser\+::parse}}
+\subsubsection{\texorpdfstring{read\+Ode\+Vars()}{readOdeVars()}}
+{\footnotesize\ttfamily def xppy.\+parser.\+parse.\+read\+Ode\+Vars (\begin{DoxyParamCaption}\item[{}]{ode\+\_\+file = {\ttfamily tmp\+\_\+ode} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function reads the variables names from ode_file (including auxiliary 
+variables) and returns a data descriptor dictionary; the numbers represent
+columns in the output.dat file.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacexppy_1_1parser_1_1parse_a7852601fc25e28c32b4fe9747e29a629}\label{namespacexppy_1_1parser_1_1parse_a7852601fc25e28c32b4fe9747e29a629}} 
+\index{xppy\+::parser\+::parse@{xppy\+::parser\+::parse}!read\+Set\+Pars@{read\+Set\+Pars}}
+\index{read\+Set\+Pars@{read\+Set\+Pars}!xppy\+::parser\+::parse@{xppy\+::parser\+::parse}}
+\subsubsection{\texorpdfstring{read\+Set\+Pars()}{readSetPars()}}
+{\footnotesize\ttfamily def xppy.\+parser.\+parse.\+read\+Set\+Pars (\begin{DoxyParamCaption}\item[{}]{set\+\_\+file = {\ttfamily tmp\+\_\+set},  }\item[{}]{read\+\_\+par = {\ttfamily True},  }\item[{}]{read\+\_\+init = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function reads the parameters and initial conditions
+from set_file and returns parameters list. By default all the values 
+are read; the read of a specific type can be suppressed by changing
+the appropriate flag to False.
+\end{DoxyVerb}
+ 
